@@ -1,8 +1,17 @@
+# -----------------------------------------------------------------------------------------
+# The code in this file is an implementation of Kolmogorov-Arnold Networks (KAN)
+# and is sourced from the 'efficient-kan' repository by Blealtan.
+#
+# Original Repository: https://github.com/Blealtan/efficient-kan
+# License: MIT License
+#
+# This code is used as a component in the research paper:
+# "Per-Link Collision Depth Prediction for Redundant Manipulators..."
+# -----------------------------------------------------------------------------------------
+
 import torch
 import torch.nn.functional as F
 import math
-
-# code from here: https://github.com/Blealtan/efficient-kan
 
 
 class KANLinear(torch.nn.Module):
